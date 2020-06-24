@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Snake-js</title>
+</head>
+
+<body align="center", onload="start()">
+    <tr>
+        <td><div id="header"></div></td>
+    </tr>
+    <tr><br><br></tr>
+    <tr><canvas id="gameCanvas", height="400", width="400"></canvas></tr>
+    <br><br><br><br>
+    <div align="center">
+        <table align="center" id="buttons">
+        <tr>
+            <td></td>
+            <td><button id="up" type="button" onclick="snake.changeDirection('up')">UP</button></td>
+            <td></td>
+        </tr><br>
+        <tr>
+            <td><button id="left" type="button" onclick="snake.changeDirection('left')">LEFT</button></td>
+            <td><button id="down" type="button" onclick="snake.changeDirection('down')">DOWN</button></td>
+            <td><button id="right" type="button" onclick="snake.changeDirection('right')">RIGHT</button></td>
+        </tr>
+        </table>
+    </div>
+</body>
+    <pre><script src="snake.js"></script></pre>
+</body>
+</html>
